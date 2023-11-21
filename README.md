@@ -139,3 +139,5 @@ text: [{"a":"b"},{"c":"d"},{"e":"f"}] output => [{"1":"2"},{"3":"4"},{"5":"6"}]
 ```
 <br/>
 
+![image](https://github.com/Josthost/python_hack_2/assets/127422114/9de12a6d-4fec-4f3e-91b6-933774f62531)
+

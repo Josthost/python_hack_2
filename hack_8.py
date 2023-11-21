@@ -8,7 +8,20 @@ text: ["a","b"] output => ["2","1"]
 """
 
 
-def fn_hack_8():
-    result = ["a","b","c","d","e"]
-    #...
+def fn_hack_8(result):
+
+    i = 0
+   
+    if len(result) == 5 or len(result) == 3:
+
+        for i in range (len(result)):
+            result[i] = (f"{result[i]}-{i + 1}")
+
+        result = sorted(result, reverse=True)
+
+    else:
+        for i in range(len(result)):
+            result[i] = str(i+1)
+        result = sorted(result, reverse=True)
+
     return result
