@@ -15,7 +15,14 @@ text: "qux" output => "QvX"
 """
 
 
-def fn_hack_3():
-    result = "fooziman"
-    #...
+def fn_hack_3(result):
+    
+    vocals = ["a", "e", "i", "o", "u","U"]
+    r = ["@", "3", "¡", "0", "v","v"]
+
+    result = result[0].upper() + result[1:-1] + result[-1].upper()
+
+    for i, vocal in enumerate(vocals):
+        result = result.replace(vocal, r[i])
+
     return result
